@@ -1,0 +1,5 @@
+<ul>
+  {{#each contacts.data as |contact|}}
+    <ContactListItem @name={{contact.name}} @email={{contact.email}} />
+  {{/each}}
+</ul>

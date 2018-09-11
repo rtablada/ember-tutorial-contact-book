@@ -1,0 +1,13 @@
+<form onsubmit={{action "saveContact"}}>
+  <p>
+    <label for="new-name">Name</label>
+    <input value={{name}} name="name" id="new-name" oninput={{action (mut name) value="target.value"}} />
+  </p>
+
+  <p>
+    <label for="new-email">Email</label>
+    <input value={{email}} name="email" id="new-email" oninput={{action (mut email) value="target.value"}} />
+  </p>
+
+  <button type="submit">Save</button>
+</form>
